@@ -6,24 +6,39 @@
 body {
     background-color: #eeedde;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #wrapper {
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     
-    margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
     height: auto;
     overflow: auto;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+#wrapper-two {
+    display: flex;
+    flex-direction: row;
     gap: 100px;
+}
+
+#title {
+    font-size: 80px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #drawing-board {
