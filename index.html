@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
@@ -11,11 +14,16 @@
     <body>
         <div id="wrapper">
             <div id="settings">
+                <span id="settings-span">Settings</span>
                 <div id="size">
+                    <span>Grid Size</span>
                     <input class="setting" type="range" min="1" max="100" step="1" value="16" id="grid-size">
-                    <div class="setting" id="grid-size-value">16</div>
+                    <div class="setting" id="grid-size-value">16 x 16</div>
                 </div>
-                <input class="setting" id="color" type="color" value="#000000">
+                <div id="color-div">
+                    <span>Color</span>
+                    <input class="setting" id="color" type="color" value="#000000">
+                </div>
                 <button id="clear">Clear</button>
             </div>
             <div id="drawing-board">

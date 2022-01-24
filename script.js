@@ -32,7 +32,7 @@ function draw() {
 }
 
 function resizeGrid() {
-    document.getElementById('grid-size-value').textContent = `${gridSizeSlider.value}`
+    document.getElementById('grid-size-value').textContent = `${gridSizeSlider.value} x ${gridSizeSlider.value}`
     gridSize = gridSizeSlider.value;
     let squares = Array.from(document.getElementsByClassName('square'));
     squares.forEach((square) => {
@@ -47,6 +47,6 @@ function clearGrid() {
     let squares = Array.from(document.getElementsByClassName('square'));
 
     squares.forEach((square) => {
-        square.style.backgroundColor = 'white';
+        square.style.backgroundColor = '#eeedde';
     });
 }
